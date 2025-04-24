@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare - Clínica Veterinaria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-paw"></i>
+            <h1>VetCare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#citas" class="btn-cita">Pedir Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Cuidamos de tu mascota como si fuera nuestra</h2>
+            <p>Servicios veterinarios de calidad con el mejor equipo profesional</p>
+            <a href="#citas" class="btn">Solicitar cita</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Vacunación</h3>
+                <p>Programas completos de vacunación para todas las edades y especies.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cut"></i>
+                <h3>Cirugía</h3>
+                <p>Intervenciones quirúrgicas con tecnología de última generación.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tooth"></i>
+                <h3>Odontología</h3>
+                <p>Cuidado dental profesional para mantener sana la boca de tu mascota.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-procedures"></i>
+                <h3>Hospitalización</h3>
+                <p>Áreas especializadas para recuperación y tratamiento continuo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="team">
+        <h2>Nuestro Equipo</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Veterinario 1">
+                <h3>Dra. Ana Martínez</h3>
+                <p>Cirujana especializada</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Veterinario 2">
+                <h3>Dr. Carlos López</h3>
+                <p>Especialista en animales exóticos</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Veterinario 3">
+                <h3>Dra. Sofía Ramírez</h3>
+                <p>Cardióloga veterinaria</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="citas" class="appointment">
+        <h2>Pide tu cita</h2>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="pet">Tipo de mascota:</label>
+                <select id="pet" required>
+                    <option value="">Seleccione...</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="roedor">Roedor</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Motivo de la consulta:</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Confirmar cita</button>
+        </form>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Calle Veterinaria 123, Ciudad</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+34 123 456 789</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>info@vetcare.com</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.123456!3d39.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjYiTiAwwrAwNyczNi4wIlc!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 9:00 - 20:00</p>
+                <p>Sábados: 10:00 - 14:00</p>
+                <p>Urgencias 24h</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 VetCare - Clínica Veterinaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
